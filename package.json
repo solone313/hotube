@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "solone313",
@@ -13,5 +14,8 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
