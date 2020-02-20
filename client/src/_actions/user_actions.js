@@ -47,3 +47,12 @@ export function logoutUser(){
     }
 }
 
+export function loginWithGoogle(dataToSubmit){
+    const request = axios.post(`${USER_SERVER}/googleLogin`,dataToSubmit)
+                .then(response => response.data);
+
+    return {
+        type: LOGIN_USER,
+        payload: request
+    }
+}
